@@ -1,17 +1,13 @@
-import { Link } from "gatsby"
+/** @jsx jsx */
+import { jsx } from "theme-ui"
+
+import Link from './Link'
 import PropTypes from "prop-types"
-import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header>
     <nav>
       <Link to="/">Home</Link>
-      /
-      <Link to="/posts">Posts</Link>
-      /
-      <Link to="/about">About</Link>
-      /
-      <Link to="/blogroll">Blogroll</Link>
     </nav>
   </header>
 )
