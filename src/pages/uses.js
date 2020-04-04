@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'gatsby'
-import SEO from '../components/SEO'
+import SEO from '../components/seo'
 
 function Uses() {
   return <>
