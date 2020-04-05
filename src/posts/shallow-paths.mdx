@@ -1,0 +1,22 @@
+---
+title: Shallow path hierarchies in js projects
+slug: shallow-paths
+---
+
+# Shallow path hierarchies in JavaScript projects
+
+Sometomes it seems like "What is the recommended way to structure React projects" must be the hardest problem in JavaScript, at least there is a lot of discussion and uncertainty around it. I doubt that most of these discussions are very important in the end, but I can absolutely relate to the uncertainty. Often I'm not sure how to sort my components into folders
+
+## Move files around until it feels right
+
+This is not a good idea, because
+
+- Especially when working with other developers, it is easy to lose track when moving files
+- What if it never feels right?
+- This forces you to make decisions about something ultimately insignificant
+
+## Just keep stuff in a single folder until it becomes unbearable
+
+This has been my approach to structuring React projects, and I am very happy with it. It removes a decision for me when creating a new component, therefor removing a barrier for my productivity.
+
+I have also noticed that for me, having many components in one file encourages me to use descriptive component names that can stand on their own. This actually makes it easier to find the right files, as this usually happens from the cmd+p menu in Sublime Text or VSCode.

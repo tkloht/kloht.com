@@ -27,9 +27,22 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-mdx`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              fluid: true,
+              maxWidth: 1200,
+            },
+          },
+        ],
+      },
+    },
     `gatsby-plugin-layout`,
-    'gatsby-plugin-theme-ui',
+    "gatsby-plugin-theme-ui",
     {
       resolve: `gatsby-source-filesystem`,
       options: {

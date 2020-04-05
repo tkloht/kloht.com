@@ -1,11 +1,32 @@
-import React from 'react'
-import {MDXRenderer } from 'gatsby-plugin-mdx'
-import {graphql} from 'gatsby'
+/** @jsx jsx */
+import { jsx } from "theme-ui"
+import { MDXRenderer } from "gatsby-plugin-mdx"
+import { graphql } from "gatsby"
 
-function MDXPost({data}) {
-  return <div>
-    <MDXRenderer>{data.mdx.body}</MDXRenderer>
-  </div>
+function MDXPost({ data }) {
+  return (
+    <div
+      sx={theme => ({
+        maxWidth: "34em",
+        ".gatsby-resp-image-wrapper + .gatsby-resp-image-wrapper": {
+          marginTop: 3,
+        },
+        p: {
+          lineHeight: 1.5,
+        },
+        a: {
+          color: "inherit",
+          textDecorationStyle: "underline",
+          textDecorationColor: theme.colors.primary,
+        },
+        "a:hover": {
+          color: "primary",
+        },
+      })}
+    >
+      <MDXRenderer>{data.mdx.body}</MDXRenderer>
+    </div>
+  )
 }
 
 export const pageQuery = graphql`

@@ -1,23 +1,23 @@
-import React from "react"
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Posts from "../components/posts"
 
 const IndexPage = () => {
-
-  return(
-    <>
+  return (
+    <main>
       <SEO title="Home" />
-      <h1>Hi people</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
-      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <Image />
-      </div>
+      <h1>Hi</h1>
+      <p>
+        You have found the website of Tobias Kloht, a software developer in
+        Berlin.
+      </p>
+      <p>I am currently working for Klarna.</p>
 
-      <h2>Recent posts</h2>
+      <h2 sx={{ marginTop: 5 }}>Recent posts</h2>
       <Posts />
-    </>
+    </main>
   )
 }
 
