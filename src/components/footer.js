@@ -17,7 +17,12 @@ function Footer() {
       }}
     >
       <div sx={{ fontWeight: "bold", fontSize: 3 }}>Tobias Kloht</div>
-      <Link to="/impressum">Impressum</Link>
+      <div>
+        <Link to="/impressum">Impressum</Link>
+        <Link sx={{ marginLeft: 2 }} to="/datenschutz">
+          Datenschutz
+        </Link>
+      </div>
     </div>
   )
 }

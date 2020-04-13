@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import Posts from "../components/posts"
 

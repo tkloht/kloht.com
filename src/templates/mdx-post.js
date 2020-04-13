@@ -11,17 +11,6 @@ function MDXPost({ data }) {
         ".gatsby-resp-image-wrapper + .gatsby-resp-image-wrapper": {
           marginTop: 3,
         },
-        p: {
-          lineHeight: 1.5,
-        },
-        a: {
-          color: "inherit",
-          textDecorationStyle: "underline",
-          textDecorationColor: theme.colors.primary,
-        },
-        "a:hover": {
-          color: "primary",
-        },
       })}
     >
       <MDXRenderer>{data.mdx.body}</MDXRenderer>

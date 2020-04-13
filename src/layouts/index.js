@@ -45,12 +45,23 @@ function Layout({ children }) {
     >
       <Header siteTitle={data.site.siteMetadata.title} />
       <main
-        sx={{
+        sx={theme => ({
           flex: "1 1 auto",
           margin: 3,
           maxWidth: "34em",
           marginLeft: [3, 6],
-        }}
+          p: {
+            lineHeight: 1.5,
+          },
+          a: {
+            color: "inherit",
+            textDecorationStyle: "underline",
+            textDecorationColor: theme.colors.primary,
+          },
+          "a:hover": {
+            color: "primary",
+          },
+        })}
       >
         {children}
       </main>
