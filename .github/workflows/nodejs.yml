@@ -44,6 +44,6 @@ jobs:
           name: gatsby-build
           path: public
       - name: S3 sync
-        run: aws s3 sync public $BUCKET_NAME --acl public-read --delete
+        run: aws s3 sync public $BUCKET_NAME --delete
         env:
           BUCKET_NAME: ${{ secrets.BucketName }}
